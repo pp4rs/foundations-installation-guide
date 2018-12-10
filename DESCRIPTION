@@ -1,7 +1,10 @@
-Lesson: installation-guide
-Title: Installation Guide for Programming Practices for Research Students
-Version: 2017.2.2
-Authors: person("Lachlan", "Deer", email = "lachlan.deer@gmail.com", role = c("aut", "cre"))
+Lesson: foundations-installation-guide
+Title: Installation Guide for Programming Practices for Research in Economics - Foundations
+Version: 2019.1.0
+Authors: person("Lachlan", "Deer", email = "lachlan.deer@gmail.com", role = c("aut", "cre")),
+         person("Julian", "Langer", email = "julian.langer@econ.uzh.ch", role = c("aut")),
+         person("Ulrich", "Bergmann", email = "ulrich.bergmann@econ.uzh.ch", role = c("ctb")),
+         person("Carlo", "Zanella", email = "carlo.zanella@econ.uzh.ch", role = c("ctb"))
 Maintainer: Lachlan Deer <lachlan.deer@gmail.com>
 Description: Course Installation Guide. Built using `Mkdocs.` This is the most up to date version.
 License: CC-BY-NC-SA
