@@ -1,8 +1,8 @@
 ## Acknowledgements
 
-This module is based on the 2017 version a larger Programming Practices course:
+This module is based on the 2017 version of a larger Programming Practices course:
 
-* [`Programming Practices For Economists`](pp4rs.github.io/2017-uzh), by Lachlan Deer, Adrian Etter, Julian Langer & Max Winkler
+* [`Programming Practices For Economists`](https://pp4rs.github.io/2017-uzh), by Lachlan Deer, Adrian Etter, Julian Langer & Max Winkler
 
 It is designed after and borrows a lot from:
 
@@ -11,7 +11,7 @@ It is designed after and borrows a lot from:
 
 ## License
 
-Material is licensed under a CC-BY-NC-SA license. Further information is available at our [`course homepage`](pp4rs.github.io/2018-uzh)
+Material is licensed under a CC-BY-NC-SA license. Further information is available at our [`course homepage`](https://pp4rs.github.io/2019-foundations-uzh)
 
 Suggested Citation:
 
