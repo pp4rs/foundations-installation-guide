@@ -9,14 +9,14 @@ Throughout the course we will emphasize use of the terminal and executing comman
 So that we can work as closely as possible to the Mac and Linux users we will install [Cygwin](https://www.cygwin.com/).
 
 *   Download Cygwin [here](https://cygwin.com/install.html) and use the graphical installer. Accept all the default options.
-*   Choose any server from which to download cygwin and packages when prompted. 
+*   Choose any server from which to download cygwin and packages when prompted.
 *   Verify your installation by opening Cygwin. When it opens you should see a black box with some text that looks like:
 ```bash
 userName@computerName: ~$
 ```
-i.e. for Uli he sees:
+i.e. for Lachlan he sees:
 ```bash
-ubergmann@dhcp-wlan-uzh-10-12-130-xxx: ~$
+lachlan@lachlan-ThinkPad: ~$
 ```
 We will explain what all this means in the first day or so of the course.
 
@@ -62,7 +62,7 @@ And you should see the following output
 Your system is ready to brew
 ```
 
-* Now we can use homebrew to easily install software. To use the current R version 3.5.1, we want to make sure you have some basic system tools that some packages require. Let's (re)install them real quick. First `libxml2`:
+* Now we can use homebrew to easily install software. We want to make sure you have some basic system tools that some packages require. Let's (re)install them real quick. First `libxml2`:
 
 ```bash
 brew reinstall libxml2
@@ -89,8 +89,6 @@ Again, we need it to link to terminal:
 echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
 ```
 
-
-
 * Finally, we need `libgit2`:
 
 ```bash
@@ -101,7 +99,8 @@ If terminal tells you it is not yet installed, then go for ```brew reinstall lib
 
 ## Linux Users
 
-To use the current R version, wee need to install some system tools. For this open a terminal session with `Crtl` + `Alt` + `T`.
+Linux comes with a  command line interface already installed.
+We need to install some additional system tools. For this open a terminal session with `Crtl` + `Alt` + `T`.
 
 * Now copy the following command into terminal and press `Enter`:
 

@@ -1,21 +1,12 @@
-site_name: Programming Practices for Research in Econonomics
+site_name: Programming Practices for Research in Econonomics - Foundations
 pages:
 - Getting Started: index.md
 #- Terminology: terminology.md
 - Command Line Tools: commandLine.md
 - Text Editor: textEditor.md
 - Git: gitInstall.md
-- Python: python.md
-- Python Extras: python-more.md
-- Build Tools: snakemake.md
-- Webscraping: webscraping_drivers.md
 - R: r.md
-# - Automation with Make: make.md
-# - Automation with Waf: waf.md
-- GIS Tools with Python: gis.md
-- Pandoc: pandoc.md
-# - Matlab: matlab.md
-# - Path Settings: path-setting.md
+- Build Tools: snakemake.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md
 
