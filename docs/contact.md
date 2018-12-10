@@ -2,29 +2,18 @@
 
 ## Programming Practices Team
 
-Programming Practices for Research in Economics was created by
-
-* Lachlan Deer
-* Adrian Etter
-* Julian Langer
-* Max Winkler
-
-at the Department of Economics, University of Zurich in 2016. This installation guide is for the 2018 edition, conducted by
-
-* Ulrich Bergmann
-* Ursina Schaede
-* Dora Simon
-* Carlo Zanella
-* Christian Zünd
+Programming Practices for Research in Economics: Foundations was created by Lachlan Deer and Julian Langer at the Department of Economics, University of Zurich in 2018. This installation guide is for the 2018 edition.
 
 ## Questions or Comments?
 
 Please contact us via email:
 
 ```
-programming "AT" econ.uzh.ch
+pp4rs.contact "AT" gmail "DOT" com
 ```
 
-with the title "Installation Guide: Programming Practices for Research in Economics."
+with the title "Installation Guide"
+
+ or [post an issue on our GitHub page](https://github.com/pp4rs/foundations-installation-guide/issues)
 
 We look forward to hearing from you if you have questions about the installation guide, found this installation guide useful, or have further comments or suggestions to improve it.
