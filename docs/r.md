@@ -7,7 +7,7 @@ R's use in the data science and econometrics community has taken off over recent
 
 Go to the [R homepage](https://cran.r-project.org/) and download the installer for your operating system.
 
-The current version for Mac and Windows is `R version 3.5.1` and for Linux it is `R version 3.4.1`
+The current version is `R version 3.5.1.`
 
 ## Installing RStudio
 
@@ -26,7 +26,7 @@ R --version
 followed by pressing `Return`. The expected return begins with:
 
 ```bash
-R version 3.x.1 (201x-xx-xx) -- "Some Funky Name"
+R version 3.x.x (201x-xx-xx) -- "Some Funky Name"
 ```
 
 You should see the version corresponding to the one chosen on the website.
@@ -54,9 +54,13 @@ You should see the version corresponding to the one chosen on the website.
 
 ## Installing Additional R Packages
 
-We will need some additional libraries to conduct our statistical analysis. Proceed as follows:
+We will need some additional libraries to conduct our statistical analysis.
 
-*   Open RStudio
+A complete list of R packages will be provided before the course begins.
+
+<!-- Proceed as follows: -->
+
+<!-- *   Open RStudio
 *   In the **console**, copy and paste the following:
 ```r
 uzh_progecon <- c(  "reshape", "rmarkdown",
@@ -74,4 +78,4 @@ install.packages(uzh_progecon)
 
 * If you are asked if you want to install packages that need compilation, type `y` followed by `Return` to confirm this.
 *   Wait until all the packages have been installed and the you are done.
-    *   It *may* take a while, so be patient
+    *   It *may* take a while, so be patient -->
