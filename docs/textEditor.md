@@ -79,7 +79,7 @@ Make sure that the version numbers are above `1.26.x` or newer.
     Close your current terminal session, open a new one, and again try `atom .` - the Atom editor will open if this was successful.
 
     !!! tip
-        You will need to add a new PATH for most of the following installation steps. Always keep in mind that after you add a new PATH, you need to start a *new* cygwin/terminal session to verify whether it worked. Sometimes it may take a couple of minutes until your PATH is recognized by the terminal. 
+        You will need to add a new PATH for most of the following installation steps. Always keep in mind that after you add a new PATH, you need to start a *new* cygwin/terminal session to verify whether it worked. Sometimes it may take a couple of minutes until your PATH is recognized by the terminal.
 
 ## Additional Packages for Atom
 
@@ -98,11 +98,9 @@ When you find the package that you need, you click the blue 'Install' button and
 For this course, please install the following packages:
 
 *   autocomplete-R
-*   autocomplete-python (choose Jedi as your engine when asked)
 *   autoflow
 *   language-r
 *   linter
-*   linter-lintr
 *   tablr
 *   platformio-ide-terminal
 *   project-plus
