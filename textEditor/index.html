@@ -8,23 +8,24 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Text Editor - Programming Practices for Research in Econonomics</title>
+  <title>Text Editor - Programming Practices for Research in Econonomics - Foundations</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
     var mkdocs_page_name = "Text Editor";
     var mkdocs_page_input_path = "textEditor.md";
-    var mkdocs_page_url = "/textEditor/";
+    var mkdocs_page_url = null;
   </script>
   
-  <script src="../js/jquery-2.1.1.min.js"></script>
-  <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
 
@@ -35,10 +36,10 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics</a>
+        <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics - Foundations</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -87,37 +88,17 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../python/">Python</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../python-more/">Python Extras</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../snakemake/">Build Tools</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../webscraping_drivers/">Webscraping</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <a class="" href="../r/">R</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../gis/">GIS Tools with Python</a>
+    <a class="" href="../python/">Python</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../pandoc/">Pandoc</a>
+    <a class="" href="../snakemake/">Build Tools</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -140,7 +121,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Programming Practices for Research in Econonomics</a>
+        <a href="..">Programming Practices for Research in Econonomics - Foundations</a>
       </nav>
 
       
@@ -223,7 +204,7 @@ Click <code>New</code> and paste the following string, modifying the <code>usern
 <p>Close your current terminal session, open a new one, and again try <code>atom .</code> - the Atom editor will open if this was successful.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You will need to add a new PATH for most of the following installation steps. Always keep in mind that after you add a new PATH, you need to start a <em>new</em> cygwin/terminal session to verify whether it worked. Sometimes it may take a couple of minutes until your PATH is recognized by the terminal. </p>
+<p>You will need to add a new PATH for most of the following installation steps. Always keep in mind that after you add a new PATH, you need to start a <em>new</em> cygwin/terminal session to verify whether it worked. Sometimes it may take a couple of minutes until your PATH is recognized by the terminal.</p>
 </div>
 </div>
 <h2 id="additional-packages-for-atom">Additional Packages for Atom</h2>
@@ -237,11 +218,9 @@ When you find the package that you need, you click the blue 'Install' button and
 <p>For this course, please install the following packages:</p>
 <ul>
 <li>autocomplete-R</li>
-<li>autocomplete-python (choose Jedi as your engine when asked)</li>
 <li>autoflow</li>
 <li>language-r</li>
 <li>linter</li>
-<li>linter-lintr</li>
 <li>tablr</li>
 <li>platformio-ide-terminal</li>
 <li>project-plus</li>
@@ -309,9 +288,8 @@ When you find the package that you need, you click the blue 'Install' button and
     </span>
 </div>
     <script>var base_url = '..';</script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/require.js"></script>
-      <script src="../search/search.js"></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
 
 </body>
 </html>

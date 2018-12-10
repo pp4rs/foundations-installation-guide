@@ -8,23 +8,24 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>R - Programming Practices for Research in Econonomics</title>
+  <title>R - Programming Practices for Research in Econonomics - Foundations</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
     var mkdocs_page_name = "R";
     var mkdocs_page_input_path = "r.md";
-    var mkdocs_page_url = "/r/";
+    var mkdocs_page_url = null;
   </script>
   
-  <script src="../js/jquery-2.1.1.min.js"></script>
-  <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
 
@@ -35,10 +36,10 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics</a>
+        <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics - Foundations</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -67,26 +68,6 @@
     <a class="" href="../gitInstall/">Git</a>
 	    </li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../python/">Python</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../python-more/">Python Extras</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../snakemake/">Build Tools</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../webscraping_drivers/">Webscraping</a>
-	    </li>
-          
             <li class="toctree-l1 current">
 		
     <a class="current" href="./">R</a>
@@ -112,12 +93,12 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../gis/">GIS Tools with Python</a>
+    <a class="" href="../python/">Python</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../pandoc/">Pandoc</a>
+    <a class="" href="../snakemake/">Build Tools</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -140,7 +121,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Programming Practices for Research in Econonomics</a>
+        <a href="..">Programming Practices for Research in Econonomics - Foundations</a>
       </nav>
 
       
@@ -167,7 +148,7 @@
 R's use in the data science and econometrics community has taken off over recent years and (at a bare minimum) should be considered as an open source replacement to Stata.</p>
 <h2 id="installing-r">Installing R</h2>
 <p>Go to the <a href="https://cran.r-project.org/">R homepage</a> and download the installer for your operating system.</p>
-<p>The current version for Mac and Windows is <code>R version 3.5.1</code> and for Linux it is <code>R version 3.4.1</code></p>
+<p>The current version is <code>R version 3.5.1.</code></p>
 <h2 id="installing-rstudio">Installing RStudio</h2>
 <p>RStudio provides an easy to work with interface to R, and its format should feel familiar to Stata and Matlab users.</p>
 <p>Download and install the free version of RStudio for your operating system from <a href="https://www.rstudio.com/products/rstudio/download3/">here</a>.</p>
@@ -177,7 +158,7 @@ R's use in the data science and econometrics community has taken off over recent
 </code></pre>
 
 <p>followed by pressing <code>Return</code>. The expected return begins with:</p>
-<pre><code class="bash">R version 3.x.1 (201x-xx-xx) -- &quot;Some Funky Name&quot;
+<pre><code class="bash">R version 3.x.x (201x-xx-xx) -- &quot;Some Funky Name&quot;
 </code></pre>
 
 <p>You should see the version corresponding to the one chosen on the website.</p>
@@ -198,31 +179,19 @@ Click <code>New</code> and paste the following string:</p>
 <p>After you have done this, open a <strong>new</strong> terminal and try and verify your install.</p>
 </div>
 <h2 id="installing-additional-r-packages">Installing Additional R Packages</h2>
-<p>We will need some additional libraries to conduct our statistical analysis. Proceed as follows:</p>
-<ul>
-<li>Open RStudio</li>
-<li>In the <strong>console</strong>, copy and paste the following:</li>
-</ul>
-<pre><code class="r">uzh_progecon &lt;- c(  &quot;reshape&quot;, &quot;rmarkdown&quot;,
-                    &quot;plm&quot;, &quot;Hmisc&quot;, &quot;sandwich&quot;,
-                    &quot;Ecdat&quot;, &quot;stargazer&quot;, &quot;knitr&quot;,
-                    &quot;httr&quot;, &quot;rvest&quot;, &quot;xml2&quot;,
-                    &quot;xtable&quot;,&quot;tidyverse&quot;, &quot;AER&quot;,
-                    &quot;rdd&quot;, &quot;car&quot;, &quot;aod&quot;, &quot;lmtest&quot;,
-                    &quot;lfe&quot;, &quot;nlme&quot;, &quot;lme4&quot;,
-                    &quot;erer&quot;, &quot;margins&quot;,
-                    &quot;multiwayvcov&quot;, &quot;RSQLite&quot;, &quot;dbplyr&quot;)
+<p>We will need some additional libraries to conduct our statistical analysis.</p>
+<p>A complete list of R packages will be provided before the course begins.</p>
+<!-- Proceed as follows: -->
 
-install.packages(uzh_progecon)
-</code></pre>
+<!-- *   Open RStudio
+*   In the **console**, copy and paste the following:
 
-<ul>
-<li>If you are asked if you want to install packages that need compilation, type <code>y</code> followed by <code>Return</code> to confirm this.</li>
-<li>Wait until all the packages have been installed and the you are done.<ul>
-<li>It <em>may</em> take a while, so be patient</li>
-</ul>
-</li>
-</ul>
+wzxhzdk:2
+
+
+* If you are asked if you want to install packages that need compilation, type `y` followed by `Return` to confirm this.
+*   Wait until all the packages have been installed and the you are done.
+    *   It *may* take a while, so be patient -->
               
             </div>
           </div>
@@ -230,10 +199,10 @@ install.packages(uzh_progecon)
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../gis/" class="btn btn-neutral float-right" title="GIS Tools with Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../python/" class="btn btn-neutral float-right" title="Python">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../webscraping_drivers/" class="btn btn-neutral" title="Webscraping"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../gitInstall/" class="btn btn-neutral" title="Git"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -259,17 +228,16 @@ install.packages(uzh_progecon)
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../webscraping_drivers/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../gitInstall/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../gis/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../python/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
     <script>var base_url = '..';</script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/require.js"></script>
-      <script src="../search/search.js"></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
 
 </body>
 </html>
