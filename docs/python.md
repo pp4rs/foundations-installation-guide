@@ -2,7 +2,7 @@
 
 Anaconda is a pre-packaged Python distribution for scientific users.
 
-Direct your browser to [Anaconda download page](https://www.anaconda.com/download/) and download the Python 3.6 Graphical Installer for your machine.
+Direct your browser to [Anaconda download page](https://www.anaconda.com/download/) and download the Python 3.7 Graphical Installer for your machine.
 Follow the steps provided on the website.
 
 During the installation you will be asked whether you want Anaconda Python to be added to your PATH. **Click yes!** Even if the installation window gives a warning about adding it to your PATH, please still check that box.
@@ -31,13 +31,13 @@ You should see the following information returned:
 ###   Windows users:
 
 ```bash
-Python 3.6.5 :: Anaconda, Inc.
+Python 3.7.x :: Anaconda, Inc.
 ```
 
 ###  Mac & Linux/Ubuntu users:
 
 ```bash
-Python 3.6.2 :: Anaconda custom (64-bit)
+Python 3.7.x :: Anaconda custom (64-bit)
 ```
 
 !!! tip "Python 2 vs Python 3"

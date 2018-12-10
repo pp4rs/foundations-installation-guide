@@ -6,6 +6,7 @@ pages:
 - Text Editor: textEditor.md
 - Git: gitInstall.md
 - R: r.md
+- Python: python.md
 - Build Tools: snakemake.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md
