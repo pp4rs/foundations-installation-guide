@@ -158,17 +158,25 @@ We will want to use version control to keep track of the files we write, and the
 You will need to setup accounts for each of these: -->
 
 <ul>
-<li>Please <a href="https://github.com/join">register</a> for a <a href="https://github.com/">GitHub</a> account
+<li>Please <a href="https://github.com/join">register</a> for a <a href="https://github.com/">GitHub</a> account<ul>
+<li>We recomment choosing a username that is independent of your workplace (i.e 'janesmith' rather than 'janesmith_uzh' so it can be portable when you change jobs).
 <!-- *   Sign into the <a href="https://econgit.uzh.ch/">Economics Department's GitLab server</a>. Use your UZH shortname and your web-access password (same as for OLAT). You will need to access "Econ Git" while on-site at UZH or whilst using a UZH VPN if you are off-site. --></li>
 </ul>
+</li>
+</ul>
+<p>!!! danger Privacy, Data Sharing and GitHub
+    GitHub was recently acquired by Microsoft, so by providing personal information on GitHub you are sharing data with Microsoft.
+    If you feel this is problematic, provide the minimum information needed, and/or use alternative usernames and email accounts.</p>
 <!-- !!! danger "Non-UZH Economics Students"
     The UZH Department of Economics has a internal Git server that may be hard for you to access.
     It looks and behaves almost identically to [GitLab](https://about.gitlab.com/).
     We recommend that you register for an account here, so you can follow along in class. -->
 
 <h2 id="mac-users">Mac Users</h2>
-<p>On MacOS, download and install Git from <a href="http://git-scm.com/download/mac">here</a>. If your system says it can't be opened, because it is from an unidentified developer, then open it via right-lick and <code>open</code>.
-Also install the command-line auto-completion script. For this go to <a href="https://github.com/git/git/raw/master/contrib/completion/git-completion.bash">this website</a>. You should now see a the text file starting with</p>
+<p>On MacOS, download and install Git from <a href="http://git-scm.com/download/mac">here</a>. If your system says it can't be opened, because it is from an unidentified developer, then open it via right-lick and <code>open</code>.</p>
+<h3 id="adding-autocompletion">Adding Autocompletion</h3>
+<p>Because we want to minimize our time spent typing long commands we want the option for our computer to autocomplete some git commands.</p>
+<p>Install the command-line auto-completion script. For this go to <a href="https://github.com/git/git/raw/master/contrib/completion/git-completion.bash">this website</a>. You should now see a the text file starting with</p>
 <pre><code># bash/zsh completion support for core Git.
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce &lt;spearce@spearce.org&gt;
@@ -178,6 +186,7 @@ Also install the command-line auto-completion script. For this go to <a href="ht
 
 <p>save this file as <code>git-completion.bash</code> to your user folder by pressing <code>CMD+s</code>. If you want to know where your user folder is, open a terminal and type <code>pwd</code>. For Uli it is for example under <code>/Users/ubergmann</code>.</p>
 <p>If you use Safari, make sure to save the file as <code>Page Source</code> and don't append a <code>.txt</code> to its filename (Chrome does this automatically). If everything went right, you can now type <code>ls</code> in your terminal window and should see <code>git-completion.bash</code> there between other files.</p>
+<p>During the course we will show how to use the autocomplete functionality works.</p>
 <h2 id="linux-users">Linux Users</h2>
 <p>Follow the steps documented <a href="https://git-scm.com/download/linux">here</a> to install on Linux from the terminal.</p>
 <div class="admonition danger">
