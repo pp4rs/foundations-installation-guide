@@ -3,7 +3,10 @@
 A good text editor lies at the heart of any serious programmer's toolkit: It can do almost anything and makes you much more productive.
 The editors built into each program are generally are not an option (we will find certain cases where you may want to use them).
 
-Please download, install it along with the necessary packages and stick with it for at least the duration of the course and assignment to get a feel for how it works.
+For this course we are going to use a text editor called 'Atom.'
+Atom is a free and open source text editor that is easy to use and can be customized as needed to make our coding lives easier.
+
+Please download, install Atom following the instructions below along with the necessary packages and stick with it for at least the duration of the course and assignment to get a feel for how it works.
 
 There is a slight learning curve, but soon you hopefully be wondering why no-one forced you to do this before!
 We should get you past the steepest part of the learning curve during the course itself, so we don't anticipate you struggling on your own.
