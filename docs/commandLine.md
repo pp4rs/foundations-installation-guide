@@ -39,7 +39,7 @@ A command line interface comes already installed with OSX.
 
 You will need to install some other software from the terminal thoughout the course, so it will be useful to install some additional "command line tools" now:
 
-*   First we want to install X-code command line tools. Open a terminal by searching for it with spotlight, `cmd + spacebar` then type terminal and press `Return` when it appears. Then, copy and paste the following
+*   First we want to install X-code command line tools. Open a terminal by searching for it with spotlight, `cmd + spacebar` then type "terminal" and press `Return` when it appears. Then, copy and paste the following
 
 ```bash
 xcode-select --install
@@ -47,7 +47,7 @@ xcode-select --install
 
 If you get an answer that the command line tools are already installed, you can just continue to the next step.
 
-* Second,  install Homebrew by opening a terminal and pasting the following command:
+* Second,  install Homebrew by copying and pasting the following command into a the terminal:
 
 ```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
