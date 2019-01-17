@@ -15,7 +15,11 @@ During the course we will show you how to use [GitHub](https://www.github.com) t
 You will need to setup accounts for each of these: -->
 
 *   Please [register](https://github.com/join) for a [GitHub](https://github.com/) account
+    - We recomment choosing a username that is independent of your workplace (i.e 'janesmith' rather than 'janesmith_uzh' so it can be portable when you change jobs).
 <!-- *   Sign into the [Economics Department's GitLab server](https://econgit.uzh.ch/). Use your UZH shortname and your web-access password (same as for OLAT). You will need to access "Econ Git" while on-site at UZH or whilst using a UZH VPN if you are off-site. -->
+
+!!! danger Privacy, Data Sharing and GitHub
+    GitHub was recently acquired by Microsoft, so by providing
 
 <!-- !!! danger "Non-UZH Economics Students"
     The UZH Department of Economics has a internal Git server that may be hard for you to access.
