@@ -7,7 +7,7 @@ R's use in the data science and econometrics community has taken off over recent
 
 Go to the [R homepage](https://cran.r-project.org/) and download the installer for your operating system.
 
-The current version is `R version 3.5.1.`
+The current version is `R version 3.5.2, Eggshell Igloo`
 
 ## Installing RStudio
 
