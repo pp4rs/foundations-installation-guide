@@ -19,7 +19,8 @@ You will need to setup accounts for each of these: -->
 <!-- *   Sign into the [Economics Department's GitLab server](https://econgit.uzh.ch/). Use your UZH shortname and your web-access password (same as for OLAT). You will need to access "Econ Git" while on-site at UZH or whilst using a UZH VPN if you are off-site. -->
 
 !!! danger Privacy, Data Sharing and GitHub
-    GitHub was recently acquired by Microsoft, so by providing
+    GitHub was recently acquired by Microsoft, so by providing personal information on GitHub you are sharing data with Microsoft.
+    If you feel this is problematic, provide the minimum information needed, and/or use alternative usernames and email accounts.
 
 <!-- !!! danger "Non-UZH Economics Students"
     The UZH Department of Economics has a internal Git server that may be hard for you to access.
@@ -29,7 +30,12 @@ You will need to setup accounts for each of these: -->
 ## Mac Users
 
 On MacOS, download and install Git from [here](http://git-scm.com/download/mac). If your system says it can't be opened, because it is from an unidentified developer, then open it via right-lick and `open`.
-Also install the command-line auto-completion script. For this go to [this website](https://github.com/git/git/raw/master/contrib/completion/git-completion.bash). You should now see a the text file starting with
+
+### Adding Autocompletion
+
+Because we want to minimize our time spent typing long commands we want the option for our computer to autocomplete some git commands.
+
+Install the command-line auto-completion script. For this go to [this website](https://github.com/git/git/raw/master/contrib/completion/git-completion.bash). You should now see a the text file starting with
 
 ```
 # bash/zsh completion support for core Git.
@@ -43,6 +49,7 @@ save this file as `git-completion.bash` to your user folder by pressing `CMD+s`.
 
 If you use Safari, make sure to save the file as `Page Source` and don't append a `.txt` to its filename (Chrome does this automatically). If everything went right, you can now type `ls` in your terminal window and should see `git-completion.bash` there between other files.
 
+During the course we will show how to use the autocomplete functionality works.
 
 ## Linux Users
 
