@@ -56,11 +56,11 @@ You should see the version corresponding to the one chosen on the website.
 
 We will need some additional libraries to conduct our statistical analysis.
 
-A complete list of R packages will be provided before the course begins.
+<!-- A complete list of R packages will be provided before the course begins. -->
 
-<!-- Proceed as follows: -->
+Proceed as follows:
 
-<!-- *   Open RStudio
+*   Open RStudio
 *   In the **console**, copy and paste the following:
 ```r
 uzh_progecon <- c(  "reshape", "rmarkdown",
@@ -70,12 +70,15 @@ uzh_progecon <- c(  "reshape", "rmarkdown",
                     "xtable","tidyverse", "AER",
                     "rdd", "car", "aod", "lmtest",
                     "lfe", "nlme", "lme4",
-                    "erer", "margins",
-                    "multiwayvcov", "RSQLite", "dbplyr")
+                    "erer", "margins", "multiwayvcov"
+                    "lubridate", "haven", "rddensity",
+                    "rdrobust", "ivpack", "readxl",
+                    "ggrepel"
+                    )
 
 install.packages(uzh_progecon)
 ```
 
 * If you are asked if you want to install packages that need compilation, type `y` followed by `Return` to confirm this.
 *   Wait until all the packages have been installed and the you are done.
-    *   It *may* take a while, so be patient -->
+    *   It *may* take a while, so be patient
